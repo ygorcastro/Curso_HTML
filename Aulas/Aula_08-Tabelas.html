@@ -1,0 +1,112 @@
+<!-- <table></table> - Tag que cria tabelas -->
+
+<!-- <caption></caption> - Tag para colocar legendas nas tabelas -->
+
+<!-- <tr></tr> - Tag que cria linha da Tabela -->
+
+<!-- <th></th> - Tag para título da coluna  coluna de minha tabela -->
+
+<!-- <td></td> - Tag para conteúdo da coluna -->,
+
+<!-- colspan = "número de colunas" - Atributo para mesclar as células da coluna-->
+
+<!-- rowspan = "número de células" - Atributo para mesclar as linhas das colunas-->
+
+
+<!-- <colgroup></colgroup> - TAG  CRIA UM GRUPO DE COLUNAS E FORMATAS INDIVIDUALMENTE -->
+
+<!-- <col class = "nome da classe da coluna"> -->
+
+<!-- <thead></thead> - Tag que indica que é um cabeçalho -->
+
+<!-- <tbody></tbody> - Indica que são informações -->
+<!-- <tfoot></tfoot> - Tag de Rodapé -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 7px;
+        }
+
+        .nome {
+            background-color: blue;
+        }
+
+        .email {
+            background-color: blueviolet;
+        }
+
+        .cargo {
+            background-color: chartreuse;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Tabela</h1>
+    <caption>Tabela de Dados</caption>
+
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="telefone">
+            <col class="email">
+            <col class="cargo">
+
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th><strong>Nome</strong></th>
+                <th><strong>Telefone</strong></th>
+                <th><strong>E-mail</strong></th>
+                <th><strong>Cargo</strong></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+
+                <td>Ygor de Castro Santos</td>
+                <td>(11) 9 4811 6803</td>
+                <td>ygor.castro@outlook.com.br</td>
+                <td rowspan="2">Suporte</td>
+            </tr>
+
+            <tr>
+
+                <td>Ronaldo Souza</td>
+                <td>(11) 9 4811 6803</td>
+                <td>ronaldo.castro@outlook.com.br</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><strong>Total: 2 </strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+</body>
+
+</html>
